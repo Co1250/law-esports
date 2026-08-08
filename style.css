@@ -364,6 +364,7 @@ a {
 }
 
 /* --- SOCIALS SECTION (BOTTOM) --- */
+/* --- SOCIALS SECTION (BOTTOM) --- */
 .socials-container {
   padding-bottom: 100px;
 }
@@ -372,23 +373,19 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1000px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 .socials-row {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
 }
 
-.top-row .social-card {
-  flex: 1;
-  max-width: 320px;
-}
-
-.bottom-row .social-card {
-  flex: 0 1 320px;
+.socials-row .social-card {
+  flex: 1 1 300px;
+  max-width: 340px;
   width: 100%;
 }
 
@@ -437,6 +434,61 @@ a {
   font-size: 0.72rem;
   color: #64748b;
   margin-top: 3px;
+}
+
+/* --- FOOTER --- */
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #02050b;
+}
+
+.footer-brand h3 {
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .socials-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socials-row .social-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
 }
 
 /* --- FOOTER --- */
