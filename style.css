@@ -389,6 +389,7 @@ a {
 
 .bottom-row .social-card {
   flex: 0 1 320px;
+  width: 100%;
 }
 
 .social-card {
