@@ -287,42 +287,77 @@ a {
   margin-top: 4px;
 }
 
-/* --- MERCH --- */
+/* ==========================================
+   MERCH SECTION
+   ========================================== */
 .merch-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .merch-card {
   background: #0b1329;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+.merch-img-wrapper {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  background: #050a14;
 }
 
 .merch-img {
   width: 100%;
-  height: 180px;
-  object-fit: contain;
-  margin-bottom: 12px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.merch-card h4 {
-  font-size: 0.85rem;
+.merch-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 24px -4px rgba(56, 189, 248, 0.25);
 }
 
-.merch-card .price {
-  color: #38bdf8;
-  margin-left: 6px;
+.merch-card:hover .merch-img {
+  transform: scale(1.05);
 }
 
-/* --- ACHIEVEMENTS --- */
+.merch-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.merch-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* ==========================================
+   ACHIEVEMENTS SECTION
+   ========================================== */
 .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .achievement-card {
@@ -330,41 +365,75 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+.achievement-img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
 }
 
 .achievement-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --- ABOUT --- */
+.achievement-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 24px -4px rgba(56, 189, 248, 0.25);
+}
+
+.achievement-card:hover .achievement-img {
+  transform: scale(1.05);
+}
+
+.achievement-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+
+/* ==========================================
+   ABOUT US SECTION
+   ========================================== */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .about-box {
   background: #0b1329;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   padding: 32px;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
 }
 
-.about-box h3 {
-  font-size: 1.05rem;
-  color: #38bdf8;
-  margin-bottom: 16px;
+.about-box:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 24px -4px rgba(56, 189, 248, 0.25);
 }
 
-.about-box p {
-  color: #94a3b8;
-  font-size: 0.85rem;
-  line-height: 1.6;
-  margin-bottom: 16px;
+.about-box:active {
+  transform: translateY(-2px) scale(0.99);
 }
 
-.about-box p:last-child {
-  margin-bottom: 0;
-}
 
-/* --- SOCIALS SECTION (BOTTOM) --- */
-/* --- SOCIALS SECTION (BOTTOM) --- */
+/* ==========================================
+   SOCIALS SECTION
+   ========================================== */
 .socials-container {
   padding-bottom: 100px;
 }
@@ -397,13 +466,22 @@ a {
   display: flex;
   align-items: center;
   gap: 16px;
-  transition: all 0.2s ease;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s ease, 
+              background 0.3s ease, 
+              box-shadow 0.3s ease;
 }
 
 .social-card:hover {
-  border-color: rgba(56, 189, 248, 0.4);
-  transform: translateY(-3px);
+  transform: translateY(-6px);
+  border-color: #38bdf8;
   background: #0b1428;
+  box-shadow: 0 8px 24px -4px rgba(56, 189, 248, 0.25);
+}
+
+.social-card:active {
+  transform: translateY(-2px) scale(0.99);
 }
 
 .social-icon-box {
@@ -416,6 +494,12 @@ a {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.social-card:hover .social-icon-box {
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
 }
 
 .social-icon {
@@ -435,7 +519,6 @@ a {
   color: #64748b;
   margin-top: 3px;
 }
-
 /* --- FOOTER --- */
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
