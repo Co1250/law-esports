@@ -145,7 +145,7 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
 
 /* ==========================================
-   HERO SECTION
+   HERO SECTION & AMBIENT GLOW BACKGROUND
    ========================================== */
 .hero-section {
   position: relative;
@@ -157,9 +157,50 @@ a {
   padding: 120px 20px 60px 20px;
   text-align: center;
   overflow: hidden;
+  background: #020611;
 }
 
-/* Badge above title */
+/* Ambient Center Radial Glow */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(37, 99, 235, 0.08) 50%, transparent 80%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Side Glow Accents */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1100px;
+  height: 400px;
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 85% 50%, rgba(56, 189, 248, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Elevate content over ambient background glows */
+.hero-badge,
+.hero-title,
+.hero-buttons {
+  position: relative;
+  z-index: 1;
+}
+
+/* Subtitle / Est. Badge */
 .hero-badge {
   display: inline-block;
   padding: 8px 16px;
@@ -173,7 +214,9 @@ a {
   margin-bottom: 24px;
 }
 
-/* Bubbly & Glowing Title */
+/* ==========================================
+   BUBBLY & GLOWING TITLE
+   ========================================== */
 .hero-title {
   font-family: 'Fredoka', 'Outfit', sans-serif;
   font-size: 5.5rem;
@@ -191,11 +234,10 @@ a {
     0 0 40px rgba(56, 189, 248, 0.5),
     0 0 80px rgba(37, 99, 235, 0.4);
 
-  /* Continuous Subtle Pulse Effect */
+  /* Continuous Pulsing Animation */
   animation: bubblyGlow 3s ease-in-out infinite alternate;
 }
 
-/* Pulsing Glow Keyframes */
 @keyframes bubblyGlow {
   0% {
     text-shadow: 
@@ -214,27 +256,33 @@ a {
   }
 }
 
-/* Quick Nav Button Group below title */
+/* ==========================================
+   HERO BUTTONS (FLEX GRID LAYOUT)
+   ========================================== */
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  max-width: 600px;
+  align-items: center;
+  gap: 16px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
 .hero-btn {
-  background: rgba(8, 15, 30, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  background: rgba(8, 15, 30, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 14px 28px;
   color: #38bdf8;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
               border-color 0.3s ease, 
@@ -245,24 +293,24 @@ a {
 .hero-btn:hover {
   transform: translateY(-4px);
   border-color: #38bdf8;
-  background: rgba(11, 20, 40, 0.9);
-  box-shadow: 0 8px 20px -4px rgba(56, 189, 248, 0.3);
+  background: rgba(11, 20, 40, 0.95);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4), 
+              0 8px 24px -4px rgba(56, 189, 248, 0.3);
 }
 
 .hero-btn:active {
   transform: translateY(-1px) scale(0.98);
 }
 
-/* Responsive adjustments */
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .hero-buttons {
-    gap: 8px;
+    gap: 10px;
   }
-}
 /* --- CONTENT SECTIONS --- */
 .content-section {
   max-width: 1100px;
