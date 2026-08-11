@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
+@import url('h@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
 
+/* --- RESET & CORE STYLES --- */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ body {
   padding-top: 100px;
 }
 
-/* FIXED HEADER & MARQUEE TICKER */
+/* --- FIXED HEADER & MARQUEE TICKER --- */
 .fixed-header-wrapper {
   position: fixed;
   top: 0;
@@ -62,7 +63,7 @@ body {
   100% { transform: translateX(-50%); }
 }
 
-/* NAVIGATION BAR */
+/* --- NAVIGATION BAR --- */
 .navbar {
   max-width: 1100px;
   margin: 0 auto;
@@ -122,7 +123,7 @@ body {
   opacity: 0.9;
 }
 
-/* HERO SECTION */
+/* --- HERO SECTION --- */
 .hero-section {
   min-height: 60vh;
   display: flex;
@@ -178,7 +179,7 @@ body {
   color: #030712;
 }
 
-/* CONTENT SECTIONS */
+/* --- CONTENT SECTIONS --- */
 .content-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -205,30 +206,25 @@ body {
   text-align: left;
 }
 
-/* GRIDS AND CARDS */
-.roster-grid, .merch-grid, .achievements-grid {
+/* --- ROSTER & PLAYER CARDS --- */
+.roster-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.player-card, .merch-card, .achievement-card {
-  background: #0b1329;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: left;
+.roster-grid .player-card {
+  max-width: 320px;
 }
 
-/* FIX FOR BLOWN-UP IMAGES */
-.player-img, .merch-img, .achievement-img {
+.player-img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   object-fit: cover;
   display: block;
 }
 
-.player-info, .merch-card h4 {
+.player-info {
   padding: 12px;
 }
 
@@ -241,18 +237,84 @@ body {
   color: #38bdf8;
 }
 
+/* --- MERCH GRID --- */
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.merch-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.merch-card h4 {
+  padding: 12px;
+}
+
 .price {
   color: #38bdf8;
   float: right;
 }
 
-/* ABOUT BOX */
-.about-box {
+/* --- ACHIEVEMENTS GRID --- */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.achievement-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- BASE CARD & HOVER EFFECTS --- */
+.player-card,
+.merch-card,
+.achievement-card,
+.about-box,
+.social-card {
   background: #0b1329;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
-  padding: 24px;
+  overflow: hidden;
   text-align: left;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+.player-card img,
+.merch-card img,
+.achievement-card img {
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.player-card:hover,
+.merch-card:hover,
+.achievement-card:hover,
+.about-box:hover,
+.social-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.25);
+}
+
+.player-card:hover img,
+.merch-card:hover img,
+.achievement-card:hover img {
+  transform: scale(1.08);
+}
+
+/* --- ABOUT SECTION --- */
+.about-box {
+  padding: 24px;
   line-height: 1.6;
   font-size: 0.85rem;
   color: #cbd5e1;
@@ -263,7 +325,7 @@ body {
   margin-bottom: 12px;
 }
 
-/* SOCIAL CARDS & FIX FOR BLOWN-UP SVG ICONS */
+/* --- SOCIALS SECTION & FIXED SVG ICONS --- */
 .socials-wrapper {
   display: flex;
   flex-direction: column;
@@ -279,20 +341,12 @@ body {
 }
 
 .social-card {
-  background: #0b1329;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
   padding: 14px;
   display: flex;
   align-items: center;
   gap: 14px;
   text-decoration: none;
   color: #ffffff;
-  transition: border-color 0.2s;
-}
-
-.social-card:hover {
-  border-color: #38bdf8;
 }
 
 .social-icon-box {
@@ -304,7 +358,6 @@ body {
   flex-shrink: 0;
 }
 
-/* CRITICAL FIX: Restricts SVG vector size */
 .social-icon {
   width: 24px !important;
   height: 24px !important;
@@ -325,7 +378,43 @@ body {
   color: #94a3b8;
 }
 
-/* FOOTER */
+/* --- SCROLL REVEAL ANIMATIONS --- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px) scale(0.92);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.roster-grid .player-card:nth-child(2),
+.merch-grid .merch-card:nth-child(2),
+.achievements-grid .achievement-card:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.roster-grid .player-card:nth-child(3),
+.merch-grid .merch-card:nth-child(3),
+.achievements-grid .achievement-card:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.merch-grid .merch-card:nth-child(4),
+.achievements-grid .achievement-card:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.merch-grid .merch-card:nth-child(5),
+.achievements-grid .achievement-card:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+/* --- FOOTER --- */
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 30px 20px;
