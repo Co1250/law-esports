@@ -1,279 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LAW HQ | Esports Organization</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Esports</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- FIXED TOP HEADER CONTAINER -->
-  <header class="fixed-header-wrapper">
-    <div class="ticker-wrap">
-      <div class="ticker-track">
-        <span>JOIN THE DISCORD</span><span class="dot">•</span>
-        <span>LAW HQ ESPORTS</span><span class="dot">•</span>
-        <span>OFFICIAL MERCH DROP</span><span class="dot">•</span>
-        <span>JOIN THE DISCORD</span><span class="dot">•</span>
-        <span>JOIN THE DISCORD</span><span class="dot">•</span>
-        <span>LAW HQ ESPORTS</span><span class="dot">•</span>
-        <span>OFFICIAL MERCH DROP</span><span class="dot">•</span>
-        <span>JOIN THE DISCORD</span><span class="dot">•</span>
-      </div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apparel">Apparel</a></li>
+                <li><a href="#rosters">Rosters</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-      <a href="#hero" class="nav-brand">
-        <img src="logo.png" alt="LAW HQ Logo" class="logo-img">
-        <span class="brand-text">LAW HQ</span>
-      </a>
+    <main>
+        <section id="home" class="hero">
+            <h1>Leaf Esports</h1>
+            <p>WELCOME TO</p>
+        </section>
 
-      <div class="nav-links">
-        <a href="#hero">HOME</a>
-        <a href="#roster">ROSTER</a>
-        <a href="#merch">MERCH</a>
-        <a href="#achievements">ACHIEVEMENTS</a>
-        <a href="#about" class="active">ABOUT US</a>
-        <a href="#socials">SOCIALS</a>
-      </div>
+        <section class="featured-banner">
+            <div class="banner-images">
+                <img src="https://via.placeholder.com/260x320/1b633e/ffffff?text=Pro+Kit+Front" alt="Leaf Pro Kit Front">
+                <img src="https://via.placeholder.com/260x320/1b633e/ffffff?text=Pro+Kit+Back" alt="Leaf Pro Kit Back">
+            </div>
+            <div class="banner-content">
+                <h2>2026 LEAF PRO KIT</h2>
+                <a href="#shop-section" class="btn-shop">SHOP NOW</a>
+            </div>
+        </section>
 
-      <a href="https://discord.gg/g7HBEBrbn" target="_blank" rel="noopener noreferrer" class="btn-discord">JOIN DISCORD</a>
-    </nav>
-  </header>
+        <section id="shop-section" class="section-container">
+            <div class="apparel-grid">
+                <div class="product-card">
+                    <div class="product-image-box">
+                        <img src="https://via.placeholder.com/200x250/ffffff/1b633e?text=Pro+Jersey" alt="Leaf 2026 Pro Jersey">
+                    </div>
+                    <div class="product-info">
+                        <h3>LEAF 2026 PRO JERSEY</h3>
+                        <p>$60.00 USD</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-box dark-bg">
+                        <img src="https://via.placeholder.com/200x250/080a0e/ffffff?text=Globals+Scarf" alt="Leaf 2026 Globals Scarf">
+                    </div>
+                    <div class="product-info">
+                        <h3>LEAF 2026 GLOBALS SCARF</h3>
+                        <p>$40.00 USD</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-box dark-bg">
+                        <img src="https://via.placeholder.com/200x250/080a0e/ffffff?text=Globals+Hat" alt="Leaf 2026 Globals Hat">
+                    </div>
+                    <div class="product-info">
+                        <h3>LEAF 2026 GLOBALS HAT</h3>
+                        <p>$30.00 USD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero-section">
-    <!-- Top EST. Badge -->
-    <div class="hero-badge reveal-on-scroll">
-      EST. 2026 — ESPORTS ORGANIZATION
-    </div>
+        <section id="rosters" class="section-container">
+            <h2 class="section-title">OUR ROSTERS</h2>
+            <div class="rosters-grid">
+                <a href="#fortnite-roster" class="roster-card roster-card-fortnite">
+                    <div class="roster-card-content">
+                        <div class="roster-icon">F</div>
+                    </div>
+                    <span class="card-label">Fortnite</span>
+                </a>
 
-    <!-- Bubbly & Glowing Title -->
-    <h1 class="hero-title reveal-on-scroll">LAW HQ</h1>
+                <a href="#content-roster" class="roster-card roster-card-content-bg">
+                    <div class="roster-card-content">
+                        <div class="roster-icon">🎬</div>
+                    </div>
+                    <span class="card-label">Content</span>
+                </a>
 
-    <!-- Navigation Buttons Container -->
-    <div class="hero-buttons reveal-on-scroll">
-      <a href="#roster" class="hero-btn">ROSTER</a>
-      <a href="#merch" class="hero-btn">MERCH</a>
-      <a href="#achievements" class="hero-btn">ACHIEVEMENTS</a>
-      <a href="#about" class="hero-btn">ABOUT US</a>
-      <a href="#socials" class="hero-btn">SOCIALS</a>
-    </div>
-  </section>
+                <a href="#management-roster" class="roster-card roster-card-mgmt">
+                    <div class="roster-card-content">
+                        <div class="roster-icon">👤</div>
+                    </div>
+                    <span class="card-label">Management</span>
+                </a>
+            </div>
+        </section>
 
-  <!-- ROSTER SECTION -->
-  <section id="roster" class="content-section">
-    <h2 class="section-title reveal-on-scroll">ACTIVE ROSTER</h2>
+        <section id="fortnite-roster" class="section-container">
+            <h2 class="section-title">LEAF FORTNITE</h2>
+            <div class="players-grid">
+                <div class="player-card">
+                    <img class="player-avatar" src="https://via.placeholder.com/220/1a222d/ffffff?text=GOLDEN" alt="Golden">
+                    <div class="player-name">GOLDEN</div>
+                    <div class="player-role">FORTNITE PRO</div>
+                </div>
+                <div class="player-card">
+                    <img class="player-avatar" src="https://via.placeholder.com/220/1a222d/ffffff?text=MADDENV" alt="Maddenv">
+                    <div class="player-name">MADDENV</div>
+                    <div class="player-role">FORTNITE PRO</div>
+                </div>
+                <div class="player-card">
+                    <img class="player-avatar" src="https://via.placeholder.com/220/1a222d/ffffff?text=QUVOZ" alt="Quvoz">
+                    <div class="player-name">QUVOZ</div>
+                    <div class="player-role">FORTNITE PRO</div>
+                </div>
+            </div>
 
-    <h3 class="subsection-title reveal-on-scroll">FOUNDER</h3>
-    <div class="roster-grid">
-      <div class="player-card reveal-on-scroll">
-        <img src="energe.png" alt="Energetic" class="player-img">
-        <div class="player-info">
-          <h4>ENERGETICC</h4>
-          <p>FOUNDER</p>
+            <div class="titles-section">
+                <h4>COMPETITIVE HISTORY</h4>
+                <h2>TITLES AND RESULTS</h2>
+                <div class="dropdown-box">
+                    <span>RECENT FORTNITE CHAMPIONSHIP SERIES PLACEMENTS</span>
+                    <span>▼</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-roster" class="section-container">
+            <div class="coming-soon-box">
+                COMING SOON
+            </div>
+        </section>
+
+        <section id="management-roster" class="section-container">
+            <h2 class="section-title">LEAF MANAGEMENT</h2>
+            <div class="players-grid">
+                <div class="player-card">
+                    <img class="player-avatar" src="https://via.placeholder.com/220/1a222d/ffffff?text=NUBS" alt="Nubs">
+                    <div class="player-name">NUBS</div>
+                    <div class="player-role">FOUNDER</div>
+                </div>
+                <div class="player-card">
+                    <img class="player-avatar" src="https://via.placeholder.com/220/1a222d/ffffff?text=RAIN" alt="Rain">
+                    <div class="player-name">RAIN</div>
+                    <div class="player-role">OWNER</div>
+                </div>
+                <div class="player-card">
+                    <img class="player-avatar" src="https://via.placeholder.com/220/1a222d/ffffff?text=ZANIX" alt="Zanix">
+                    <div class="player-name">ZANIX</div>
+                    <div class="player-role">OWNER</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="socials-container">
+                <div class="socials-sidebar">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M17,8C15.3,8 13.9,9.1 13.4,10.6C12.8,9 11.3,7.9 9.5,7.9C7,7.9 5,9.9 5,12.4C5,16.2 12,21 12,21C12,21 19,16.2 19,12.4C19,9.9 17,8 17,8Z"/>
+                    </svg>
+                    <h2>FOLLOW US</h2>
+                    <p>KEEP UP TO DATE WITH LEAF ESPORTS</p>
+                </div>
+                <div class="socials-grid">
+                    <a href="#" class="social-card">
+                        <div class="social-header">
+                            <span class="x-social-logo">X</span>
+                            <span class="social-arrow">↗</span>
+                        </div>
+                        <div>
+                            <div class="social-count">1000</div>
+                            <div class="social-label">TWITTER</div>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card">
+                        <div class="social-header">
+                            <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028z"/></svg>
+                            <span class="social-arrow">↗</span>
+                        </div>
+                        <div>
+                            <div class="social-count">700</div>
+                            <div class="social-label">DISCORD</div>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card">
+                        <div class="social-header">
+                            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span class="social-arrow">↗</span>
+                        </div>
+                        <div>
+                            <div class="social-count">500</div>
+                            <div class="social-label">YOUTUBE</div>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card">
+                        <div class="social-header">
+                            <svg viewBox="0 0 24 24"><path d="M11.571 1.214 2.844 3.482v14.41l8.727 2.268 8.728-2.269V3.482L11.571 1.214zm6.059 13.993-3.136.815V7.619l3.136-.816v8.404zm-4.704 1.223-3.136.816V5.17l3.136-.816v12.062z"/></svg>
+                            <span class="social-arrow">↗</span>
+                        </div>
+                        <div>
+                            <div class="social-count">200</div>
+                            <div class="social-label">TWITCH</div>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card">
+                        <div class="social-header">
+                            <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.52-1.28 2.52.01.88.47 1.73 1.19 2.23.83.59 1.93.73 2.87.35 1.05-.41 1.74-1.47 1.75-2.6.02-4.1.01-8.2.01-12.3z"/></svg>
+                            <span class="social-arrow">↗</span>
+                        </div>
+                        <div>
+                            <div class="social-count">100</div>
+                            <div class="social-label">TIKTOK</div>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card">
+                        <div class="social-header">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <span class="social-arrow">↗</span>
+                        </div>
+                        <div>
+                            <div class="social-count">100</div>
+                            <div class="social-label">INSTAGRAM</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <div class="footer-logo">Leaf</div>
+            <div class="footer-text">ESPORTS & ENTERTAINMENT ORGANIZATION</div>
+            <div class="footer-subtext">WHERE TALENT GROWS</div>
+            <div class="footer-subtext">EST. 2026</div>
         </div>
-      </div>
-    </div>
-
-    <h3 class="subsection-title reveal-on-scroll">PRO LINEUP</h3>
-    <div class="roster-grid">
-      <div class="player-card reveal-on-scroll">
-        <img src="mohanad.png" alt="Mohanad" class="player-img">
-        <div class="player-info">
-          <h4>MOHANAD</h4>
-          <p>PRO</p>
+        <div class="footer-nav">
+            <h3>NAVIGATE</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apparel">Apparel</a></li>
+                <li><a href="#rosters">Rosters</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="player-card reveal-on-scroll">
-        <img src="reflex.png" alt="Reflex" class="player-img">
-        <div class="player-info">
-          <h4>REFLEX</h4>
-          <p>PRO</p>
-        </div>
-      </div>
-      <div class="player-card reveal-on-scroll">
-        <img src="radwan.png" alt="Radwan" class="player-img">
-        <div class="player-info">
-          <h4>RADWAN</h4>
-          <p>PRO</p>
-        </div>
-      </div>
-    </div>
+    </footer>
 
-    <h3 class="subsection-title reveal-on-scroll">MAIN LINEUP</h3>
-    <div class="roster-grid">
-      <div class="player-card reveal-on-scroll">
-        <img src="ursu.png" alt="Ursu" class="player-img">
-        <div class="player-info">
-          <h4>URSU</h4>
-          <p>MAIN</p>
-        </div>
-      </div>
-      <div class="player-card reveal-on-scroll">
-        <img src="mohski.png" alt="Mohski" class="player-img">
-        <div class="player-info">
-          <h4>MOHSKI</h4>
-          <p>MAIN</p>
-        </div>
-      </div>
-      <div class="player-card reveal-on-scroll">
-        <img src="xerox.png" alt="Xerox" class="player-img">
-        <div class="player-info">
-          <h4>XEROX</h4>
-          <p>MAIN</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MERCH SECTION -->
-  <section id="merch" class="content-section">
-    <h2 class="section-title reveal-on-scroll">OFFICIAL MERCH</h2>
-    <p class="section-desc reveal-on-scroll">Equip yourself with official LAW HQ gear.</p>
-
-    <div class="merch-grid">
-      <div class="merch-card reveal-on-scroll">
-        <img src="jacket.png" alt="Jacket" class="merch-img">
-        <h4>Jacket <span class="price">$???</span></h4>
-      </div>
-      <div class="merch-card reveal-on-scroll">
-        <img src="pants.png" alt="Pants" class="merch-img">
-        <h4>Pants <span class="price">$???</span></h4>
-      </div>
-      <div class="merch-card reveal-on-scroll">
-        <img src="summertop.png" alt="Summer Top" class="merch-img">
-        <h4>Summer Top <span class="price">$???</span></h4>
-      </div>
-      <div class="merch-card reveal-on-scroll">
-        <img src="summershorts.png" alt="Summer Shorts" class="merch-img">
-        <h4>Summer Shorts <span class="price">$???</span></h4>
-      </div>
-      <div class="merch-card reveal-on-scroll">
-        <img src="prokit.png" alt="Pro Kit" class="merch-img">
-        <h4>Pro Kit <span class="price">$???</span></h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS SECTION -->
-  <section id="achievements" class="content-section">
-    <h2 class="section-title reveal-on-scroll">OUR ACHIEVEMENTS</h2>
-    <p class="section-tagline reveal-on-scroll">5X GRAND FINALISTS</p>
-
-    <div class="achievements-grid">
-      <div class="achievement-card reveal-on-scroll">
-        <img src="achievement1.jpg" alt="Fortnite Championship Series" class="achievement-img">
-      </div>
-      <div class="achievement-card reveal-on-scroll">
-        <img src="achievement2.png" alt="Fortnite Championship Series" class="achievement-img">
-      </div>
-      <div class="achievement-card reveal-on-scroll">
-        <img src="achievement3.png" alt="Fortnite Championship Series" class="achievement-img">
-      </div>
-      <div class="achievement-card reveal-on-scroll">
-        <img src="achievement4.png" alt="Fortnite Championship Series" class="achievement-img">
-      </div>
-      <div class="achievement-card reveal-on-scroll">
-        <img src="achievement5.png" alt="Fortnite Championship Series" class="achievement-img">
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT US SECTION -->
-  <section id="about" class="content-section">
-    <h2 class="section-title reveal-on-scroll">ABOUT LAW HQ</h2>
-    <p class="section-desc reveal-on-scroll">Dominating competitive regional esports with unyielding drive.</p>
-
-    <div class="about-box reveal-on-scroll">
-      <h3>ABOUT LAW HQ</h3>
-      <p>
-        LAW Esports is a competitive gaming organization dedicated to developing talent, building a strong community, and competing at the highest level. Founded with a passion for excellence, we strive to provide players and creators with the support, opportunities, and professional environment they need to succeed.
-        Whether it's competing in tournaments, producing high-quality content, or discovering the next generation of talent, LAW Esports is committed to raising the standard in esports.
-        We believe success is built through consistency, professionalism, and a winning mindset. Every member of LAW represents our core values of integrity, dedication, and continuous improvement.
-        As we continue to grow, our vision is to establish LAW Esports as a globally recognized organization that inspires players, creators, and fans while leaving a lasting impact on the competitive gaming industry.
-      </p>
-    </div>
-  </section>
-
-  <!-- SOCIALS SECTION -->
-  <section id="socials" class="content-section socials-container">
-    <h2 class="section-title reveal-on-scroll">JOIN THE COMMUNITY</h2>
-    <p class="section-desc reveal-on-scroll">Follow LAW HQ across official channels for match highlights, roster updates, and community events.</p>
-
-    <div class="socials-wrapper">
-      <!-- Top Row: Discord & Twitter -->
-      <div class="socials-row top-row">
-        <a href="https://discord.gg/g7HBEBrbn" target="_blank" rel="noopener noreferrer" class="social-card reveal-on-scroll">
-          <div class="social-icon-box">
-            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-          </div>
-          <div class="social-text">
-            <h4>DISCORD</h4>
-            <p>Join The Community</p>
-          </div>
-        </a>
-
-        <a href="https://x.com/LAWRGN" target="_blank" rel="noopener noreferrer" class="social-card reveal-on-scroll">
-          <div class="social-icon-box">
-            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </div>
-          <div class="social-text">
-            <h4>X / TWITTER</h4>
-            <p>@LAWHQ_Esports</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Bottom Row: YouTube & TikTok -->
-      <div class="socials-row bottom-row">
-        <a href="https://youtube.com/@LAWRGN" target="_blank" rel="noopener noreferrer" class="social-card reveal-on-scroll">
-          <div class="social-icon-box">
-            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </div>
-          <div class="social-text">
-            <h4>YOUTUBE</h4>
-            <p>LAW HQ Official</p>
-          </div>
-        </a>
-
-        <a href="https://www.tiktok.com/@lawrgn0" target="_blank" rel="noopener noreferrer" class="social-card reveal-on-scroll">
-          <div class="social-icon-box">
-            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.55-1.3 2.53-.02 1.06.44 2.11 1.23 2.79.83.7 1.97.97 3.03.73 1.14-.23 2.1-.98 2.56-2.02.35-.78.43-1.66.42-2.51.02-5.38.01-10.76.01-16.14z"/></svg>
-          </div>
-          <div class="social-text">
-            <h4>TIKTOK</h4>
-            <p>@LAWHQ_Official</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-brand">
-      <h3>LAW HQ ESPORTS</h3>
-    </div>
-    <div class="footer-links">
-      <a href="#hero">HOME</a>
-      <a href="#roster">ROSTER</a>
-      <a href="#merch">MERCH</a>
-      <a href="#about">ABOUT</a>
-      <a href="#achievements">ACHIEVEMENTS</a>
-      <a href="#socials">SOCIALS</a>
-    </div>
-  </footer>
-
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
